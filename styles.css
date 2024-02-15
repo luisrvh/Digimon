@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #000000f5;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 123;
+}
+/* Nuevos estilos para el cuadro de búsqueda */
+
+#particles-js {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1; /* Puedes ajustar este valor según sea necesario */
+}
+
+h1 {
+    text-align: center;
+    color: #fffdfd;
+}
+
+.contenedor {
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    border: 2px solid #fffb03; /* Color del borde */
+    border-radius: 10px; /* Radio de borde para esquinas redondeadas */
+    padding: 10px; /* Espaciado interno del contenedor */
+    background-color: #ff0c0c7c; /* Color de fondo del contenedor */
+    box-shadow: 0 0 10px rgb(255, 0, 0); /* Sombra para un efecto más brillante */
+}
+
+
+/* Nuevos estilos para ajustar la posición */
+#contenedorFiltros {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 99;
+    opacity: .85;
+}
+
+#nombre {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+/* Estilos para ajustar la posición */
+#botonesNivel {
+    display: flex;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 99;
+    opacity: .85;
+}
+
+#botonesNivel button {
+    flex-grow: 1;
+    margin-right: 10px;
+    width: 100px; /* Ajusta el ancho según sea necesario */
+    padding: 8px;
+    border: 1px solid #ff0000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    opacity: .95;
+    background-color: #00010cda;
+    color: #ffffff;
+    cursor: pointer;
+    opacity: .89;
+}
+
+#botonesNivel button:hover {
+    background-color: #fc0000;
+}
+
+
+#mostrarOcultar {
+    width: 150px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ebdede;
+    border-radius: 4px;
+    box-sizing: border-box;
+    opacity: .95;
+}
+
+button {
+    background-color: #080808;
+    color: #f0e4e4;
+    cursor: pointer;
+    opacity: .89;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+#listaDigimons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#listaDigimons div {
+    width: calc(25% - 20px); /* Ajusta el porcentaje según la cantidad de elementos deseados */
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background-color: #ff0505af;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #ffffff;
+}
+
+#listaDigimons img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#listaDigimons p {
+    margin-top: 10px;
+}
+
+

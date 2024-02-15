@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de Digimons</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <h1>"Explorando el Mundo Digital: Consulta de Datos Digimon a través de API"</h1>
+    <div class="contenedor">
+        <p>
+            ¡Te damos la bienvenida a esta emocionante travesía digital! En esta consulta a través de API, nos sumergiremos en el extenso universo de Digimon para explorar datos fascinantes y emocionantes acerca de estos seres digitales. Acompáñanos en esta expedición virtual mientras descubrimos información crucial mediante una interfaz de programación de aplicaciones (API), conectándonos directamente con el emocionante mundo de los Digimon. ¡Prepárate para revelar detalles sorprendentes y desentrañar secretos ocultos en esta breve introducción a la consulta de Digimon mediante API!</p>
+    </div>
+   
+   <!-- Barra de búsqueda por nombre -->
+       <label for="nombre">Buscar por Nombre:</label>
+    <div id="busquedaContainer">
+    <input type="text" id="nombre" oninput="buscarPorNombre(this.value)">
+    </div>
+
+    <!-- Botón para mostrar u ocultar todos -->
+    <button id="mostrarOcultar" onclick="mostrarOcultar()">Mostrar Todos</button>
+
+    <!-- Contenedor para los botones de filtrado por nivel -->
+   <div id="botonesNivel">
+    <button onclick="mostrarPorNivel('')">Todos</button>
+    <button onclick="mostrarPorNivel('Rookie')">Rookie</button>
+    <button onclick="mostrarPorNivel('Champion')">Champion</button>
+    <button onclick="mostrarPorNivel('Ultimate')">Ultimate</button>
+    <button onclick="mostrarPorNivel('Mega')">Mega</button>
+    <button onclick="mostrarPorNivel('In Training')">In Training</button>
+</div>
+
+    <!-- Contenedor para la lista de Digimons -->
+    <div id="listaDigimons"></div>
+
+    <script src="particles.min.js"></script>
+    <script src="app.js"></script>
+    <script src="Digimon.js" defer></script>
+</body>
+
+</html>
+
